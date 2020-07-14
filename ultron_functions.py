@@ -12,7 +12,7 @@ def TC():
     with sr.Microphone() as source:
         speak("Listening...")
         print("Listening...")
-        audio = r.listen(source, phrase_time_limit=10)
+        audio = r.listen(source)
 
     try :
         print('Recognizing...')
